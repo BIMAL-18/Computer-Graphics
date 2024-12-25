@@ -4,21 +4,19 @@
 
 void bresenhamLine(int x1, int y1, int x2, int y2) {
     int gd = DETECT, gm;
-    char driver[] = "";  // Fixed string literal issue
+    char driver[] = "";  
     initgraph(&gd, &gm, driver);
     
     int dx = abs(x2 - x1);
     int dy = abs(y2 - y1);
     int x, y;
     
-    // Determine direction of increment
     int x_inc = (x2 > x1) ? 1 : -1;
     int y_inc = (y2 > y1) ? 1 : -1;
     
     x = x1;
     y = y1;
-    
-    // Case for slope |m| <= 1
+
     if(dx >= dy) {
         int p = 2 * dy - dx;
         int twoDy = 2 * dy;
@@ -36,7 +34,6 @@ void bresenhamLine(int x1, int y1, int x2, int y2) {
             }
         }
     }
-    // Case for slope |m| > 1
     else {
         int p = 2 * dx - dy;
         int twoDx = 2 * dx;
@@ -54,8 +51,6 @@ void bresenhamLine(int x1, int y1, int x2, int y2) {
             }
         }
     }
-    
-    // Draw the last point
     putpixel(x2, y2, WHITE);
     
     getch();
