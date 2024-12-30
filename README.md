@@ -17,7 +17,7 @@ to it's setting and then on the "Code-runner:Executor Map"
 
 After that go to cpp inside it and then "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt after that just paste the given text
 
-"-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 "
+-lbgi -lgdi32 -lcomdlg32 -luuid -loleaut32 -lole32 
 
 before thsi && $dir$fileNameWithoutExt",
 
