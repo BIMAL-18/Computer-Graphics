@@ -16,7 +16,6 @@ int main() {
     char driver[] = "";  
     initgraph(&gd, &gm, driver);
     
-    
     int xl = 100, yl = 150;
     int x2 = 180, y2 = 120;
     int x3 = 260, y3 = 150;
@@ -31,8 +30,8 @@ int main() {
     line(x5, y5, x6, y6);
     line(x6, y6, xl, yl);
 
-    int fillColor = YELLOW;  // Changed fill color to YELLOW
-    int boundaryColor = BLACK;  // Changed boundary color to BLACK
+    int fillColor = WHITE;  
+    int boundaryColor = BLACK;  
 
     floodFill4((xl + x2 + x3 + x4 + x5 + x6) / 6, (yl + y2 + y3 + y4 + y5 + y6) / 6, fillColor, boundaryColor);
 
