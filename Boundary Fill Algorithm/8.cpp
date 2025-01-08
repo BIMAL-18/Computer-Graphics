@@ -34,7 +34,7 @@ int main() {
 
     drawTriangle(xl, yl, x2, y2, x3, y3);
 
-    int fillColor = RED;
+    int fillColor = WHITE;
     int boundaryColor = WHITE;
 
     boundaryFill8((xl + x2 + x3) / 3, (yl + y2 + y3) / 3, fillColor, boundaryColor);
