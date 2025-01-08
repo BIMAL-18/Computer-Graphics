@@ -34,7 +34,7 @@ int main() {
     line(x5, y5, x6, y6);
     line(x6, y6, x1, yl);
 
-    int fillColor = RED;
+    int fillColor = WHITE;  // Changed fill color to WHITE
     int boundaryColor = WHITE;
 
     floodFill8((x1 + x2 + x3 + x4 + x5 + x6) / 6, (yl + y2 + y3 + y4 + y5 + y6) / 6, fillColor, boundaryColor);
