@@ -2,30 +2,28 @@
 #include <stdio.h>
 
 void drawCar() {
-    // Car body
-    setcolor(BLUE);
-    rectangle(150, 300, 450, 400); // Car body (rectangle)
-    setfillstyle(SOLID_FILL, BLUE);
-    floodfill(151, 301, BLUE); // Fill the car body
+    setcolor(WHITE);
+    rectangle(150, 300, 450, 400); 
+    setfillstyle(SOLID_FILL, WHITE);
+    floodfill(151, 301, WHITE); 
 
-    // Car roof
+
     setcolor(GREEN);
-    line(200, 300, 400, 300);    // Top line of the roof
-    line(200, 300, 250, 250);    // Left diagonal of the roof
-    line(400, 300, 350, 250);    // Right diagonal of the roof
-    line(250, 250, 350, 250);    // Top horizontal line of the roof
+    line(200, 300, 400, 300);    
+    line(200, 300, 250, 250);    
+    line(400, 300, 350, 250);    
+    line(250, 250, 350, 250);    
     setfillstyle(SOLID_FILL, GREEN);
-    floodfill(251, 251, GREEN);  // Fill the roof
+    floodfill(251, 251, GREEN);  
 
-    // Front wheel
     setcolor(BLACK);
-    circle(200, 420, 20); // Front wheel (circle)
+    circle(200, 420, 20); 
     setfillstyle(SOLID_FILL, BLACK);
-    floodfill(200, 420, BLACK); // Fill the front wheel
+    floodfill(200, 420, BLACK); 
 
-    // Rear wheel
-    circle(400, 420, 20); // Rear wheel (circle)
-    floodfill(400, 420, BLACK); // Fill the rear wheel
+    
+    circle(400, 420, 20); 
+    floodfill(400, 420, BLACK); 
 }
 
 int main() {
@@ -33,9 +31,9 @@ int main() {
     char driver[] = "";  
     initgraph(&gd, &gm, driver);
 
-    drawCar(); // Call the function to draw the car
+    drawCar(); 
 
-    getch(); // Wait for user input
-    closegraph(); // Close graphics mode
+    getch(); 
+    closegraph(); 
     return 0;
 }
