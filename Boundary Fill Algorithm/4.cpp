@@ -23,7 +23,7 @@ int main() {
     int x3 = 250, y3 = 300;
     drawTriangle(xl, yl, x2, y2, x3, y3);
 
-    int fillColor = WHITE;  
+    int fillColor = RED;  
     int boundaryColor = WHITE;  
     boundaryFill4((xl + x2 + x3) / 3, (yl + y2 + y3) / 3, fillColor, boundaryColor);
 
